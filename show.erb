@@ -1,0 +1,9 @@
+<% if @rows.any? %>
+  <ul class="list-group">
+    <% @rows.each do |row| %>
+      <li class="list-group-item">
+        <%= row["teams"] %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
